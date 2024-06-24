@@ -1,31 +1,49 @@
 # Fast Editing of Singularities in Field-Aligned Stripe Patterns [SIGGRRAPH Asia 2022]
 
-This is the implementation of the SIGGRAPH Asia 2022 paper "[Fast Editing of Singularities in Field-Aligned Stripe Patterns"](https://yutanoma.com/projects/singularity-editing), by Yuta Noma, Nobuyuki Umetani, and Yoshihiro Kawahara.
+Public code release for [Fast Editing of Singularities in Field-Aligned Stripe Patterns](https://yutanoma.com/projects/singularity-editing).
 
-## Installation
+**Fast Editing of Singularities in Field-Aligned Stripe Patterns**<br>
+Yuta Noma, Nobuyuki Umetani, Yoshihiro Kawahara. <br>
+Proceedings of SIGGRAPH Asia 2022 (Conference track) <br>
+[[Project page](https://yutanoma.com/projects/singularity-editing)]
 
-This project is built upon [libigl](http://libigl.github.io/) and [directional](https://avaxman.github.io/Directional/).
+## Build the code
 
-The only dependencies are STL, Eigen, [libigl](http://libigl.github.io/libigl/), [directional](https://avaxman.github.io/Directional/), and the dependencies
-of the `igl::opengl::glfw::Viewer` (OpenGL, glad and GLFW).
-The CMake build system will automatically download libigl and its dependencies using
-[CMake FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html),
-thus requiring no setup on your part.
+**Unix-like machines**: configure (with cmake) and compile
+```
+cd /path/to/directory
+mkdir build
+cd build
+cmake ..
+make -j6
+```
 
-## Compile
+**Windows / Visual Studio**
 
-Compile this project using the standard cmake routine:
+Install CMake, and use either the CMake GUI or the command line interface (as on unix) to generate a Visual Studio solution.  Build the solution with Visual Studio.
 
-    mkdir build
-    cd build
-    cmake ..
-    make
+## Run the code
 
-This should find and build the dependencies and create a `singularity-editing` binary.
+```
+./singularity-editing ../data/models/bunny.obj
+```
 
-## Run
+## UI options
 
-From within the `build` directory just issue:
+### Move singularities
 
-    ./singularity-editing
+By selecting "move singularities", you can click on a singularity and move it to another position.
+
+### Add singularities
+
+By selecting "add singularity pairs" and clicking on two different faces, you can add a pair of singularities.
+
+### Remove singularities
+
+By selecting "remove singularities" and clicking a pair of positive (red) and negative (blue) singularities, you can annihilate them.
+
+## Contact
+
+If any issues or questions, please contact yn.devilstick@gmail.com.
+
 

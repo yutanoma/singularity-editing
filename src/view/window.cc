@@ -29,8 +29,8 @@ void radiobutton_operations(rp::viewer::SelectMode &selectMode, std::function<vo
   ImGui::RadioButton("move singularities", &_selectMode, rp::viewer::SelectMode::exchangeIndices);
   ImGui::RadioButton("remove singularities", &_selectMode, rp::viewer::SelectMode::annihilateIndices);
   ImGui::RadioButton("add singularity pairs", &_selectMode, rp::viewer::SelectMode::addSingularities);
-  ImGui::RadioButton("add brush path", &_selectMode, rp::viewer::SelectMode::brushPath);
-  ImGui::RadioButton("add index prescription path", &_selectMode, rp::viewer::SelectMode::indexPrescriptionPath);
+  // ImGui::RadioButton("add brush path", &_selectMode, rp::viewer::SelectMode::brushPath);
+  // ImGui::RadioButton("add index prescription path", &_selectMode, rp::viewer::SelectMode::indexPrescriptionPath);
 
   switch (_selectMode) {
     case rp::viewer::SelectMode::exchangeIndices:
