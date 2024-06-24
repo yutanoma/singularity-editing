@@ -1,5 +1,7 @@
 # Fast Editing of Singularities in Field-Aligned Stripe Patterns [SIGGRRAPH Asia 2022]
 
+<img src="./singularity-editing-demo.gif" width="100%">
+
 Public code release for [Fast Editing of Singularities in Field-Aligned Stripe Patterns](https://yutanoma.com/projects/singularity-editing).
 
 **Fast Editing of Singularities in Field-Aligned Stripe Patterns**<br>
