@@ -1,4 +1,4 @@
-# Fast Editing of Singularities in Field-Aligned Stripe Patterns [SIGGRRAPH Asia 2022]
+## Fast Editing of Singularities in Field-Aligned Stripe Patterns [SIGGRRAPH Asia 2022]
 
 <img src="./singularity-editing-demo.gif" width="100%">
 
